@@ -1,5 +1,3 @@
-import { GameParams } from './navigation.d';
-
 export interface GameParams {
     id: string;
     title: string;
@@ -10,7 +8,7 @@ export declare global {
     namespace ReactNavigation {
         interface RootParamList {
             home: undefined;
-            game: { GameParams }
+            game: GameParams;
         }
     }
 }

@@ -52,7 +52,6 @@ export function Home() {
           horizontal
           contentContainerStyle={styles.contentList}
         />
-
       </SafeAreaView>
     </Background>
   );
