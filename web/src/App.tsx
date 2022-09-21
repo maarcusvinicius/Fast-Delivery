@@ -5,7 +5,7 @@ import { GameBanner } from './components/GameBanner';
 import { CreateAdModal } from './components/CreateAdModal';
 import { CreateAdBanner } from './components/CreateAdBanner';
 
-import logoImg from './assets/logo-nlw-esports.svg';
+import logoImg from './assets/j3IISku.gif';
 import './styles/main.css';
 import axios from 'axios';
 
@@ -31,11 +31,11 @@ function App() {
 
 
   return (
-    <div className='max-w-[1080px] mx-auto flex flex-col items-center my-14'>
-      <img src={logoImg} alt="" />
+    <div className='max-w-[1080px] mx-auto flex flex-col items-center my-6'>
+      <img src={logoImg} className='w-40 h-40'/>
 
-      <h1 className='text-5xl text-white font-black mt-6'>
-        Seu <span className='bg-nlw-gradient text-transparent bg-clip-text'>duo</span> está aqui
+      <h1 className='text-6xl text-white font-black mt-16'>
+        Seu <span className='bg-word-gradient text-transparent bg-clip-text'>time</span> está aqui
       </h1>
 
       <div className='grid grid-cols-6 gap-6 mt-20'>

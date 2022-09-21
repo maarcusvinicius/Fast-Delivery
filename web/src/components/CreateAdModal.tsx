@@ -59,7 +59,7 @@ export function CreateAdModal() {
         <Dialog.Portal>
             <Dialog.Overlay className='bg-black/60 inset-0 fixed' />
 
-            <Dialog.Content className='fixed bg-[#2A2634] py-8 px-10 text-white top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 rounded-lg w-[480px] shadow-lg shadow-black/25'>
+            <Dialog.Content className='fixed bg-[#1e2128] py-8 px-10 text-white top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 rounded-lg w-[480px] shadow-lg shadow-black/25'>
                 <Dialog.Title className='text-3xl font-black'>Publique seu anúncio</Dialog.Title>
 
                 <form onSubmit={handleCreateAd} className="mt-8 flex flex-col gap-4">
@@ -189,13 +189,13 @@ export function CreateAdModal() {
                     <footer className="mt-4 flex justify-end gap-4">
                         <Dialog.Close
                             type="button"
-                            className="bg-zinc-500 px-5 h-12 rounded-md font-semibold hover:bg-zinc-600"
+                            className="bg-gray-500 px-5 h-12 rounded-md font-semibold hover:bg-gray-600"
                         >
                             Cancelar
                         </Dialog.Close>
                         <button
                             type="submit"
-                            className="bg-violet-500 px-5 h-12 rounded-md font-semibold flex items-center gap-3 hover:bg-violet-600"
+                            className="bg-gray-500 px-5 h-12 rounded-md font-semibold flex items-center gap-3 hover:bg-gray-600"
                         >
                             <GameController className="w-6 h-6" />
                             Encontrar
