@@ -6,9 +6,9 @@ export const styles = StyleSheet.create({
         alignItems: 'center',
     },
     logo: {
-        width: 214,
-        height: 120,
-        marginTop: 74,
+        width: 150,
+        height: 150,
+        marginTop: 54,
         marginBottom: 48
     },
     contentList: {

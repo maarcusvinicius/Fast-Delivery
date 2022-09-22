@@ -4,7 +4,7 @@ import { useRoute, useNavigation } from '@react-navigation/native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { Entypo } from '@expo/vector-icons'
 
-import logoImg from '../../assets/logo-nlw-esports.png'
+import logoImg from '../../assets/logoImg.gif'
 
 
 import { THEME } from '../../theme';
