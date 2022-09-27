@@ -6,7 +6,6 @@ import { Entypo } from '@expo/vector-icons'
 
 import logoImg from '../../assets/logoImg.gif'
 
-
 import { THEME } from '../../theme';
 import { styles } from './styles';
 

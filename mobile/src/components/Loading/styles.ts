@@ -5,5 +5,9 @@ export const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center'
+  },
+  logo: {
+    height: 132,
+    width: 132,
   }
 });
