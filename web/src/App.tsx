@@ -5,7 +5,7 @@ import { GameBanner } from './components/GameBanner';
 import { CreateAdModal } from './components/CreateAdModal';
 import { CreateAdBanner } from './components/CreateAdBanner';
 
-import logoImg from './assets/j3IISku.gif';
+import logoImg from './assets/logoImg.gif';
 import './styles/main.css';
 import axios from 'axios';
 
