@@ -43,10 +43,10 @@ Me aprofundar mais em Clean Code, React, React Native, Typescript e criação de
 
 <h2 id="Mobile"> 📲 Version Mobile </h2>
 <br><br>
-<div align="center" style="height: 202px">
-    <img align="center" alt="NextLevelWeek" title="#NextLevelWeek" src="./assets/Mobile Img Login Ti1.png">
-    <img align="center" alt="NextLevelWeek" title="#NextLevelWeek" src="./assets/Mobile Img Ti1.png">
-    <img align="center" alt="NextLevelWeek" title="#NextLevelWeek" src="./assets/Mobile Img Ti2.png">
+<div align="center" >
+    <img align="center" height="302" alt="NextLevelWeek" title="#NextLevelWeek" src="./assets/Mobile Img Login Ti1.png">
+    <img align="center" height="302"  alt="NextLevelWeek" title="#NextLevelWeek" src="./assets/Mobile Img Ti1.png">
+    <img align="center" height="302"  alt="NextLevelWeek" title="#NextLevelWeek" src="./assets/Mobile Img Ti2.png">
 </div>
 
 <br><br>
