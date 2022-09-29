@@ -29,8 +29,6 @@ Me aprofundar mais em Clean Code, React, React Native, Typescript e criação de
 
     - [ ] Deploy
 
-
-
 <h2 id="Web"> 💻 Version Web </h2>
 <br><br>
 <h1 align="center">
@@ -43,14 +41,13 @@ Me aprofundar mais em Clean Code, React, React Native, Typescript e criação de
 
 <h2 id="Mobile"> 📲 Version Mobile </h2>
 <br><br>
-<div align="center" style="height: 302px">
-    <img align="center" alt="NextLevelWeek" title="#NextLevelWeek" src="./assets/Mobile Img Login Ti1.png">
-    <img align="center" alt="NextLevelWeek" title="#NextLevelWeek" src="./assets/Mobile Img Ti1.png">
-    <img align="center" alt="NextLevelWeek" title="#NextLevelWeek" src="./assets/Mobile Img Ti2.png">
+<div align="center" >
+    <img align="center" height="302" alt="NextLevelWeek" title="#NextLevelWeek" src="./assets/Mobile Img Login Ti1.png">
+    <img align="center" height="302"  alt="NextLevelWeek" title="#NextLevelWeek" src="./assets/Mobile Img Ti1.png">
+    <img align="center" height="302"  alt="NextLevelWeek" title="#NextLevelWeek" src="./assets/Mobile Img Ti2.png">
 </div>
 
 <br><br>
-
 
 <h2 id="tecnologias"> 🛠 Tecnologias </h2>
 
@@ -63,7 +60,6 @@ As seguintes ferramentas foram usadas na construção do projeto:
   <img align="center" alt="Marcu-React" height="40" width="60" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg">
   <img align="center" alt="Marcu-Ts" height="40" width="60" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg">
 </div>
-
 
 <br><br>
 
