@@ -11,7 +11,7 @@ module.exports = {
     extend: {
       backgroundImage : {
         galaxy: "url('/background-fundo.png')",
-        'word-gradient': "linear-gradient(90deg, rgba(69,58,255,1) 0%, rgba(131,51,143,1) 61%, rgba(0,72,170,1) 100%)",
+        'word-gradient': "linear-gradient(270deg, rgba(255,0,0,1) 0%, rgba(245,160,11,1) 100%, rgba(255,255,255,1) 100%);",
         'game-gradient': "linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.9) 67.08%)"
       },
     },

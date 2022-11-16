@@ -1,13 +1,13 @@
 import { useEffect, useState } from 'react';
 import * as Dialog from '@radix-ui/react-dialog';
+import axios from 'axios';
 
-import { GameBanner } from './components/GameBanner';
+import { LunchBanner } from './components/LunchBanner';
 import { CreateAdModal } from './components/CreateAdModal';
 import { CreateAdBanner } from './components/CreateAdBanner';
 
-import logoImg from './assets/logoImg.gif';
+import Pizza_Steve from './assets/Pizza_Steve.png';
 import './styles/main.css';
-import axios from 'axios';
 
 interface Game {
   id: string;
@@ -31,24 +31,30 @@ function App() {
 
 
   return (
-    <div className='max-w-[1080px] mx-auto flex flex-col items-center my-6'>
-      <img src={logoImg} className='w-40 h-40'/>
+    <div className='max-w-[1080px] flex flex-col mx-auto mt-20'>
 
-      <h1 className='text-6xl text-white font-black mt-16'>
-        Seu <span className='bg-word-gradient text-transparent bg-clip-text'>time</span> está aqui
-      </h1>
+      <div className='grid grid-rows-3 grid-flow-col gap-4'>
+        <img src={Pizza_Steve} className='mt-20 w-70 h-70 animate-bounce row-span-3' />
 
-      <div className='grid grid-cols-6 gap-6 mt-20'>
-        {games.map(game => {
-          return (
-            <GameBanner
-              key={game.id}
-              bannerUrl={game.bannerUrl}
-              title={game.title}
-              adsCount={game._count.ads}
-            />
-          )
-        })}
+        <h1 className='text-6xl font-black ml-5'>
+          <span className='bg-word-gradient text-transparent bg-clip-text drop-shadow-lg'>Seu prato está aqui</span>
+        </h1>
+        <div className='row-span-2 col-span-2'>
+          <div className='grid grid-cols-6 gap-6 mt-20'>
+
+            <LunchBanner item="🌭" />
+
+            <LunchBanner item="🍗" />
+
+            <LunchBanner item="🍕" />
+
+            <LunchBanner item="🍔" />
+
+            <LunchBanner item="🍟" />
+
+            <LunchBanner item="🌯" />
+          </div>
+        </div>
       </div>
 
       <Dialog.Root>
@@ -56,6 +62,7 @@ function App() {
 
         <CreateAdModal />
       </Dialog.Root>
+
     </div>
   )
 }

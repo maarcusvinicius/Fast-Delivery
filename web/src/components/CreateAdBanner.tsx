@@ -5,16 +5,15 @@ import * as Dialog from '@radix-ui/react-dialog'
 export function CreateAdBanner() {
     return (
         <div className='pt-1 mt-8 bg-word-gradient self-stretch rounded-lg overflow-hidden'>
-          <div className='bg-[#272a33] px-8 py-6 flex justify-between items-center'>
+          <div className='bg-[#d23304] px-8 py-6 flex justify-between items-center'>
 
             <div>
-              <strong className='text-2xl text-white font-black block'>Não encontrou seu duo?</strong>
-              <span className='text-zinc-400 block'>Publique um anúncio para encontrar novos players!</span>
+              <strong className='text-2xl text-white font-black block drop-shadow-lg'>Publique seu pedido aqui!</strong>
             </div>
 
-            <Dialog.Trigger className='py-3 px-4 bg-gray-500 hover:bg-gray-600  text-white rounded flex items-center gap-3'>
+            <Dialog.Trigger className='py-3 px-4 bg-[#f5a00b] hover:bg-[#cb860e] text-white rounded flex items-center gap-3 drop-shadow-lg'>
               <MagnifyingGlassPlus size={24} />
-              Publicar anúncio
+              Publicar pedido
             </Dialog.Trigger>
           </div>
       </div>
