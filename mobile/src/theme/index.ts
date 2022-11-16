@@ -2,16 +2,17 @@ export const THEME = {
   COLORS: {
     BACKGROUND_900: '#121214',
     BACKGROUND_800: '#18181B',
+    BACKGROUND_100: '#ffffff',
 
-    TEXT: '#FFFFFF',
+    TEXT: '#f5a00b',
 
     CAPTION_500: '#71717A',
     CAPTION_400: '#A1A1AA',
     CAPTION_300: '#D4D4D8',
 
-    SHAPE: '#1e2128',
+    SHAPE: '#6f1a03',
 
-    PRIMARY: '#272a33',
+    PRIMARY: '#f5a00b',
     SUCCESS: '#34D399',
     ALERT: '#F87171',
 

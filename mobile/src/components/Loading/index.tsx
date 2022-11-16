@@ -1,6 +1,6 @@
 import { View, Image } from 'react-native';
 
-import logoImg from '../../../src/assets/logoImg.gif'
+import logoImg from '../../../src/assets/logoImg.png'
 
 import { styles } from './styles';
 

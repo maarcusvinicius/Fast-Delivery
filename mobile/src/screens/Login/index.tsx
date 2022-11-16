@@ -2,16 +2,15 @@ import * as AuthSession from 'expo-auth-session';
 
 import { Text, Image, TouchableOpacity } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
-import { GameController } from 'phosphor-react-native';
+import { GoogleLogo } from 'phosphor-react-native';
 import { useNavigation } from '@react-navigation/native'
 
 
 import { styles } from './styles';
 import { THEME } from '../../theme';
 
-import logoImg from '../../assets/logoImg.gif';
+import logoImg from '../../assets/logoImg.png';
 
-import { Heading } from '../../components/Heading';
 import { Background } from '../../components/Background';
 
 
@@ -48,22 +47,17 @@ export function Login() {
                     style={styles.logo}
                 />
 
-                <Heading
-                    title='Encontre seu duo!'
-                    subtitle='Selecione o game que deseja jogar...'
-                />
-
                 <TouchableOpacity
                     style={styles.button}
                     onPress={handleDiscordSignIn}
                 >
-                    <GameController
+                    <GoogleLogo
                         color={THEME.COLORS.TEXT}
                         size={20}
                     />
 
                     <Text style={styles.buttonTitle}>
-                        Entrar com Discord
+                        Entrar com o Google
                     </Text>
                 </TouchableOpacity>
             </SafeAreaView>

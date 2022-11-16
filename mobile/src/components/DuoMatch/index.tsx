@@ -22,7 +22,7 @@ export function DuoMatch({ discord, onClose, ...rest }: Props) {
         setIsCopping(true);
         await Clipboard.setStringAsync(discord)
 
-        Alert.alert('Discord Cópiado!', 'Usuário copiado para adiciná la ao Discord.')
+        Alert.alert('Pedido enviado!', 'Usuário será notificado agora mesmo!')
         setIsCopping(false)
     }
 
@@ -53,13 +53,13 @@ export function DuoMatch({ discord, onClose, ...rest }: Props) {
                     />
 
                     <Heading
-                        title="Let's play"
-                        subtitle='Agora é só começar a jogar!'
+                        title="Let's go!"
+                        subtitle='Agora só avisar ao cliente!'
                         style={{ alignItems: 'center', marginTop: 24 }}
                     />
 
                     <Text style={styles.label}>
-                        Adicione no Discord
+                        Pedido saiu para entrega?
                     </Text>
 
                     <TouchableOpacity
@@ -69,7 +69,8 @@ export function DuoMatch({ discord, onClose, ...rest }: Props) {
                     >
 
                         <Text style={styles.discord}>
-                            {isCopping ? <ActivityIndicator color={THEME.COLORS.PRIMARY} /> : discord}
+                            {/* {isCopping ? <ActivityIndicator color={THEME.COLORS.PRIMARY} /> : discord} */}
+                            Confirmar!
                         </Text>
                     </TouchableOpacity>
                 </View>

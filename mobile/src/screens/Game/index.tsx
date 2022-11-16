@@ -4,7 +4,7 @@ import { useRoute, useNavigation } from '@react-navigation/native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { Entypo } from '@expo/vector-icons'
 
-import logoImg from '../../assets/logoImg.gif'
+import logoImg from '../../assets/logoImg.png';
 
 import { THEME } from '../../theme';
 import { styles } from './styles';
@@ -72,7 +72,7 @@ export function Game() {
 
         <Heading
           title={game.title}
-          subtitle='Conecte-se e comece a jogar!'
+          subtitle='Selecione qual deseja analisar!'
         />
 
         <FlatList
@@ -90,7 +90,7 @@ export function Game() {
           showsHorizontalScrollIndicator={false}
           ListEmptyComponent={() => (
             <Text style={styles.emptyListTest}>
-              Não há anúncios publicados ainda.
+              Não há pedidos publicados ainda.
             </Text>
           )}
         />

@@ -9,8 +9,8 @@ export const styles = StyleSheet.create({
     logo: {
         width: 150,
         height: 150,
-        marginTop: 54,
-        marginBottom: 48
+        marginTop: 170,
+        marginBottom: 40
     },
     contentList: {
         paddingLeft: 32,

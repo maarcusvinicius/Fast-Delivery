@@ -10,10 +10,10 @@ const { Navigator, Screen } = createNativeStackNavigator();
 export function AppRoutes() {
     return (
         <Navigator screenOptions={{ headerShown: false }}>
-            <Screen
+            {/* <Screen
                 name="login"
                 component={Login}
-            />
+            /> */}
 
             <Screen
                 name="home"

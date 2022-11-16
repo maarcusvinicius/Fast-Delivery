@@ -9,7 +9,7 @@ import { Heading } from '../../components/Heading';
 import { Background } from '../../components/Background';
 import { GameCard, GameCardProps } from '../../components/GameCard';
 
-import logoImg from '../../assets/logoImg.gif'
+import logoImg from '../../assets/logoImg.png';
 
 export function Home() {
   const [games, setGames] = useState<GameCardProps[]>();
@@ -21,7 +21,7 @@ export function Home() {
       .then(data => setGames(data))
   }, [])
 
-  function handleOpenGame({ id, title, bannerUrl }: GameCardProps ) {
+  function handleOpenGame({ id, title, bannerUrl }: GameCardProps) {
     navigation.navigate('game', { id, title, bannerUrl })
   }
 
@@ -35,8 +35,8 @@ export function Home() {
         />
 
         <Heading
-          title='Encontre seu duo!'
-          subtitle='Selecione o game que deseja jogar...'
+          title='Seu prato está aqui!'
+          subtitle='Selecione qual deseja analisar!'
         />
 
         <FlatList
@@ -48,8 +48,7 @@ export function Home() {
               onPress={() => handleOpenGame(item)}
             />
           )}
-          showsHorizontalScrollIndicator={false}
-          horizontal
+          showsVerticalScrollIndicator={false}
           contentContainerStyle={styles.contentList}
         />
       </SafeAreaView>
