@@ -36,23 +36,22 @@ function App() {
       <div className='grid grid-rows-3 grid-flow-col gap-4'>
         <img src={Pizza_Steve} className='mt-20 w-70 h-70 animate-bounce row-span-3' />
 
-        <h1 className='text-6xl font-black ml-5'>
-          <span className='bg-word-gradient text-transparent bg-clip-text drop-shadow-lg'>Seu prato está aqui</span>
+        <h1 className='text-6xl font-black'>
+          <span className='bg-word-gradient text-transparent ml-14 bg-clip-text drop-shadow-lg'>Seu prato está aqui</span>
         </h1>
-        <div className='row-span-2 col-span-2'>
+
+        <div className='row-span-2 col-span-1'>
           <div className='grid grid-cols-6 gap-6 mt-20'>
+            {games.map(game => {
+              return (
+                <LunchBanner
+                  key={game.id}
+                  bannerUrl={game.bannerUrl}
+                  title={game.title}
+                />
+              )
+            })}
 
-            <LunchBanner item="🌭" />
-
-            <LunchBanner item="🍗" />
-
-            <LunchBanner item="🍕" />
-
-            <LunchBanner item="🍔" />
-
-            <LunchBanner item="🍟" />
-
-            <LunchBanner item="🌯" />
           </div>
         </div>
       </div>
