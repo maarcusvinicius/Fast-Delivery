@@ -20,12 +20,12 @@ interface Game {
 
 function App() {
 
-  const [games, setGames] = useState<Game[]>([])
+  const [pedidos, setPedidos] = useState<Game[]>([])
 
   useEffect(() => {
-    axios('http://localhost:3333/games')
+    axios('http://localhost:3333/pedidos')
       .then(response => {
-        setGames(response.data)
+        setPedidos(response.data)
       })
   }, [])
 
@@ -42,12 +42,12 @@ function App() {
 
         <div className='row-span-2 col-span-1'>
           <div className='grid grid-cols-6 gap-6 mt-20'>
-            {games.map(game => {
+            {pedidos.map(pedido => {
               return (
                 <LunchBanner
-                  key={game.id}
-                  bannerUrl={game.bannerUrl}
-                  title={game.title}
+                  key={pedido.id}
+                  bannerUrl={pedido.bannerUrl}
+                  title={pedido.title}
                 />
               )
             })}
