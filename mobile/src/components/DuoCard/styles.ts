@@ -20,9 +20,9 @@ export const styles = StyleSheet.create({
     justifyContent: 'center'
   },
   buttonTitle: {
-    color: THEME.COLORS.TEXT,
+    color: THEME.COLORS.SHAPE,
     fontFamily: THEME.FONT_FAMILY.SEMI_BOLD,
     fontSize: THEME.FONT_SIZE.SM,
-    marginLeft: 8
+    marginLeft: 5
   }
 });

@@ -7,22 +7,22 @@ import { styles } from './styles';
 
 import { Heading } from '../../components/Heading';
 import { Background } from '../../components/Background';
-import { GameCard, GameCardProps } from '../../components/GameCard';
+import { AdsCard, AdsCardProps } from '../../components/AdsCard';
 
 import logoImg from '../../assets/logoImg.png';
 
 export function Home() {
-  const [games, setGames] = useState<GameCardProps[]>();
+  const [pedidos, setPedidos] = useState<AdsCardProps[]>();
   const navigation = useNavigation();
 
   useEffect(() => {
-    fetch('http://192.168.0.12:3333/games')
+    fetch('http://192.168.0.12:3333/pedidos')
       .then(response => response.json())
-      .then(data => setGames(data))
+      .then(data => setPedidos(data))
   }, [])
 
-  function handleOpenGame({ id, title, bannerUrl }: GameCardProps) {
-    navigation.navigate('game', { id, title, bannerUrl })
+  function handleOpenPedido({ id, title, bannerUrl }: AdsCardProps) {
+    navigation.navigate('pedido', { id, title, bannerUrl })
   }
 
   return (
@@ -40,12 +40,12 @@ export function Home() {
         />
 
         <FlatList
-          data={games}
+          data={pedidos}
           keyExtractor={item => item.id}
           renderItem={({ item }) => (
-            <GameCard
+            <AdsCard
               data={item}
-              onPress={() => handleOpenGame(item)}
+              onPress={() => handleOpenPedido(item)}
             />
           )}
           showsVerticalScrollIndicator={false}

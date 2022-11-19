@@ -10,36 +10,36 @@ import { THEME } from '../../theme';
 import { styles } from './styles';
 
 import { Heading } from '../../components/Heading';
-import { GameParams } from '../../@types/navigation';
+import { AdsParams } from '../../@types/navigation';
 import { Background } from '../../components/Background';
 import { DuoCard, DuoCardProps } from '../../components/DuoCard';
 import { DuoMatch } from '../../components/DuoMatch';
 
 
-export function Game() {
+export function Pedido() {
 
   const [duos, setDuos] = useState<DuoCardProps[]>([])
-  const [discordDuoSelected, setDiscordDuoSelected] = useState('')
+  const [usernDuoSelected, setUsernDuoSelected] = useState('')
 
   const route = useRoute();
   const navigation = useNavigation();
-  const game = route.params as GameParams;
+  const pedido = route.params as AdsParams;
 
 
   function handleGoBack() {
     navigation.goBack()
   }
 
-  async function getDiscordUser(adsId: string) {
-    fetch(`http://192.168.0.12:3333/ads/${adsId}/discord`)
+  async function getAdsUser(adsId: string) {
+    fetch(`http://192.168.0.12:3333/ads/${adsId}/usern`)
       .then(response => response.json())
       .then(data => {
-        setDiscordDuoSelected(data.discord)
+        setUsernDuoSelected(data.usern)
       });
   }
 
   useEffect(() => {
-    fetch(`http://192.168.0.12:3333/games/${game.id}/ads`)
+    fetch(`http://192.168.0.12:3333/pedidos/${pedido.id}/ads`)
       .then(response => response.json())
       .then(data => setDuos(data));
   }, [])
@@ -51,10 +51,9 @@ export function Game() {
           <TouchableOpacity onPress={handleGoBack}>
             <Entypo
               name='chevron-thin-left'
-              color={THEME.COLORS.CAPTION_300}
+              color={THEME.COLORS.SHAPE}
               size={20}
             />
-
           </TouchableOpacity>
 
           <Image
@@ -65,13 +64,13 @@ export function Game() {
         </View>
 
         <Image
-          source={{ uri: game.bannerUrl }}
+          source={{ uri: pedido.bannerUrl }}
           style={styles.cover}
           resizeMode="cover"
         />
 
         <Heading
-          title={game.title}
+          title={pedido.title}
           subtitle='Selecione qual deseja analisar!'
         />
 
@@ -81,7 +80,7 @@ export function Game() {
           renderItem={({ item }) => (
             <DuoCard
               data={duos[0]}
-              onConnect={() => getDiscordUser(item.id)}
+              onConnect={() => getAdsUser(item.id)}
             />
           )}
           horizontal
@@ -96,9 +95,9 @@ export function Game() {
         />
 
         <DuoMatch
-          visible={discordDuoSelected.length > 0}
-          discord={discordDuoSelected}
-          onClose={() => setDiscordDuoSelected('')}
+          visible={usernDuoSelected.length > 0}
+          usern={usernDuoSelected}
+          onClose={() => setUsernDuoSelected('')}
         />
       </SafeAreaView>
     </Background>

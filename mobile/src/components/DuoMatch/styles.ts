@@ -20,7 +20,7 @@ export const styles = StyleSheet.create({
         margin: 16
     },
     label: {
-        color: THEME.COLORS.TEXT,
+        color: THEME.COLORS.BACKGROUND_100,
         fontSize: THEME.FONT_SIZE.MD,
         fontFamily: THEME.FONT_FAMILY.SEMI_BOLD,
         marginTop: 24,
@@ -29,14 +29,14 @@ export const styles = StyleSheet.create({
     discordButton: {
         width: 231,
         height: 48,
-        backgroundColor: THEME.COLORS.BACKGROUND_900,
+        backgroundColor: THEME.COLORS.PRIMARY,
         justifyContent: 'center',
         alignItems: 'center',
         borderRadius: 4,
         marginBottom: 32
     },
     discord: {
-        color: THEME.COLORS.TEXT,
+        color: THEME.COLORS.SHAPE,
         fontSize: THEME.FONT_SIZE.MD,
         fontFamily: THEME.FONT_FAMILY.REGULAR
     },

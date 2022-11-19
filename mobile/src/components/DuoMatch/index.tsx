@@ -10,17 +10,17 @@ import { styles } from './styles';
 import { THEME } from '../../theme';
 
 interface Props extends ModalProps {
-    discord: string,
+    usern: string,
     onClose: () => void;
 }
 
-export function DuoMatch({ discord, onClose, ...rest }: Props) {
+export function DuoMatch({ usern, onClose, ...rest }: Props) {
 
     const [isCopping, setIsCopping] = useState(false)
 
-    async function handleCopyDiscordToClipboard() {
+    async function handleCopyUsernToClipboard() {
         setIsCopping(true);
-        await Clipboard.setStringAsync(discord)
+        await Clipboard.setStringAsync(usern)
 
         Alert.alert('Pedido enviado!', 'Usuário será notificado agora mesmo!')
         setIsCopping(false)
@@ -42,7 +42,7 @@ export function DuoMatch({ discord, onClose, ...rest }: Props) {
                         <MaterialIcons
                             name="close"
                             size={20}
-                            color={THEME.COLORS.CAPTION_500}
+                            color={THEME.COLORS.PRIMARY}
                         />
                     </TouchableOpacity>
 
@@ -64,13 +64,12 @@ export function DuoMatch({ discord, onClose, ...rest }: Props) {
 
                     <TouchableOpacity
                         style={styles.discordButton}
-                        onPress={handleCopyDiscordToClipboard}
+                        onPress={handleCopyUsernToClipboard}
                         disabled={isCopping}
                     >
 
                         <Text style={styles.discord}>
-                            {/* {isCopping ? <ActivityIndicator color={THEME.COLORS.PRIMARY} /> : discord} */}
-                            Confirmar!
+                            {isCopping ? <ActivityIndicator color={THEME.COLORS.PRIMARY} /> : usern}
                         </Text>
                     </TouchableOpacity>
                 </View>

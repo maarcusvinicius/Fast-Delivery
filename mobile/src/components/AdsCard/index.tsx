@@ -2,9 +2,9 @@ import { TouchableOpacity, TouchableOpacityProps, ImageBackground } from 'react-
 
 import { styles } from './styles';
 
-export interface GameCardProps {
+export interface AdsCardProps {
     id: string
-    title: string
+    title: string,
     _count: {
         ads: number
     }
@@ -12,12 +12,12 @@ export interface GameCardProps {
 }
 
 interface Props extends TouchableOpacityProps {
-    data: GameCardProps,
+    data: AdsCardProps,
 }
 
-export function GameCard({data, ...rest }: Props) {
+export function AdsCard({data, ...rest}: Props) {
   return (
-    <TouchableOpacity style={[styles.container]} {...rest}>
+    <TouchableOpacity style={styles.container} {...rest}>
         <ImageBackground
             style={styles.cover}
             source={{uri: data.bannerUrl}}
