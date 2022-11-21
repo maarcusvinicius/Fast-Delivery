@@ -63,6 +63,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 - [React](https://reactjs.org/) / [React Native](https://reactnative.dev/)
 - [Vite](https://vitejs.dev/)
 - [Expo](https://expo.dev/)
+- [Tailwindcss](https://tailwindcss.com/)
 - [TypeScript](https://www.typescriptlang.org/)
 - [Prisma](https://www.prisma.io/)
 - [Node](https://nodejs.org/)
