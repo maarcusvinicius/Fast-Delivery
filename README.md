@@ -3,17 +3,18 @@
 <p align="center">🔥 Faça seu pedido e bom apetite em família! </p>
 
 <p align="center">
+ <a href="#-executar">Como executar</a> •
  <a href="#-tecnologias">Tecnologias</a> •
  <a href="#-projeto">Projeto</a> • 
  <a href="#-objetivo">Objetivo</a> • 
   <a href="#-roadmap">Roadmap</a>
 </p>
 
-<br>
+<br />
 
 ## 💻 Version Web
 
-<br>
+<br />
 
 <div id="layout" align="center">
   <p align="stretch">
@@ -24,7 +25,7 @@
 
 ## 📲 Version Mobile
 
-<br>
+<br />
 
 <div align="center" >
     <p align="stretch">
@@ -34,7 +35,26 @@
     </p>
 </div>
 
-<br/>
+<br  />
+
+## 🚀 Como executar
+
+Clone o repositório e acesse a pasta.
+
+```bash
+$ git clone https://github.com/maarcusvinicius/Fast-Delivery.git
+
+Para iniciar o projeto:
+
+# Instalar as dependências
+$ npm install / yarn
+
+# Iniciar o projeto
+$ npm run / yarn run
+```
+A aplicação pode ser acessada em [`localhost:5173`](http://localhost:5173).
+
+<br />
 
 ## 🚀 Tecnologias
 
@@ -47,22 +67,22 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 - [Prisma](https://www.prisma.io/)
 - [Node](https://nodejs.org/)
 
-<br/>
+<br />
 
 ## 💻 Projeto
 
 O Fast Delivery é um projeto que simula um aplicativo de delivery online Web, onde é possível criar seu pedido aos inputs e enviá-los ao banco de dados criado com Prisma, para serem renderizados no aplicativo Mobile para a lanchonete atender e enviar seus pedidos!
 
-<br/>
+<br />
 
 ## ✅ Objetivo
 
 Me aprofundar mais em Clean Code, React, React Native, Typescript e criação de API com NodeJS para criação de futuros projetos, acessivel e de fácil compreensão!!
 
-<br/>
+<br />
 
 ## 🏍️ Roadmap
-<br/>
+<br />
 
     - [x] Criar version Web
 
@@ -78,14 +98,14 @@ Me aprofundar mais em Clean Code, React, React Native, Typescript e criação de
 
     - [ ] Deploy
 
-<br>
+<br />
 
 <h4 align="center"> 
 	🚧  Fast Delivery 🍕 EM CONSTRUÇÃO...  🚧
 </h4>
-<br>
+<br />
 
-<br>
+<br />
 
 Feito com ❤️ por Marcus Vinicius 👋🏽 Entre em contato!
 
