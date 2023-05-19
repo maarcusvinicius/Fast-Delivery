@@ -30,7 +30,7 @@ export function DuoCard({ data, onConnect }: Props) {
         value={data.local}
       />
       <DuoInfo
-        label='Chamada de áudio'
+        label='Gorjeta'
         value={data.useVoiceChannel ? "Sim" : "Não"}
         colorValue={data.useVoiceChannel ? THEME.COLORS.SUCCESS : THEME.COLORS.ALERT}
       />
