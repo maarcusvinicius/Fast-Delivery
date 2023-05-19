@@ -1,13 +1,11 @@
 <h1 align="center">Fast Delivery 🍕</h1>
 
-<p align="center">🔥 Faça seu pedido e bom apetite em família! </p>
+<p align="left">🔥 The speed of flavor in the palm of your hand!
 
-<p align="center">
- <a href="#-executar">Como executar</a> •
- <a href="#-tecnologias">Tecnologias</a> •
- <a href="#-projeto">Projeto</a> • 
- <a href="#-objetivo">Objetivo</a> • 
-  <a href="#-roadmap">Roadmap</a>
+<br />
+
+Fast Delivery is a project that simulates an online delivery application for snack bars. It allows users to create orders through the web interface and submit them to a database. The orders are then rendered into a mobile application so that the cafeteria staff can fill them and send the orders to the customers.
+
 </p>
 
 <br />
@@ -35,30 +33,23 @@
     </p>
 </div>
 
-<br  />
+<br />
 
-## 🚀 Como executar
+## 🎡 Functionalities
 
-Clone o repositório e acesse a pasta.
+- Creating orders: Users can create their orders through the web application, selecting the desired items and adding them to the cart.
 
-```bash
-$ git clone https://github.com/maarcusvinicius/Fast-Delivery.git
+- Sending orders: Orders created by users are sent to the database using Prisma.
 
-Para iniciar o projeto:
+- Viewing orders: Orders sent are rendered in the mobile application, allowing the snack bar to view and track orders received.
 
-# Instalar as dependências
-$ npm install / yarn
-
-# Iniciar o projeto
-$ npm run / yarn run
-```
-A aplicação pode ser acessada em [`localhost:5173`](http://localhost:5173).
+- Order fulfillment: The snack bar can mark orders as fulfilled in the mobile application, indicating that they are in the process of being prepared or have already been delivered.
 
 <br />
 
-## 🔧 Tecnologias
+## 🔧 Resources used
 
-Esse projeto foi desenvolvido com as seguintes tecnologias:
+This project was developed with the following resources and technologies:
 
 - [React](https://reactjs.org/) / [React Native](https://reactnative.dev/)
 - [Vite](https://vitejs.dev/)
@@ -70,28 +61,44 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 <br />
 
-## 💻 Projeto
+## 🚀 How to run the project
 
-O Fast Delivery é um projeto que simula um aplicativo de delivery online Web, onde é possível criar seu pedido aos inputs e enviá-los ao banco de dados criado com Prisma, para serem renderizados no aplicativo Mobile para a lanchonete atender e enviar seus pedidos!
+1. Clone the repository to your local machine.
+
+```bash
+$ git clone https://github.com/maarcusvinicius/Fast-Delivery.git
+```
+
+2. Navigate to the project directory and install dependencies.
+
+```bash
+$ cd Fast-Delivery
+$ cd mobile / server / web
+$ npm install
+```
+
+3. Start the development server.
+
+```bash
+$ npm start
+```
+
+4. Open your browser and go to http://localhost: to view the application.
 
 <br />
-
-## ✅ Objetivo
-
-Me aprofundar mais em Clean Code, React, React Native, Typescript e criação de API com NodeJS para criação de futuros projetos, acessivel e de fácil compreensão!!
 
 <br />
 
 ## 🏍️ Roadmap
 <br />
 
-    - [x] Criar version Web
+    - [x] Create web version
 
-    - [x] Criar version Mobile
+    - [x] Create Mobile version
 
-    - [x] Criar Backend Node
+    - [x] Create Backend Node
 
-    - [x] Conexão da API criada
+    - [x] API connection created
 
     - [ ] Authentication Web
 
@@ -101,14 +108,20 @@ Me aprofundar mais em Clean Code, React, React Native, Typescript e criação de
 
 <br />
 
+<br />
+<br />
 <h4 align="center"> 
-	🚧  Fast Delivery 🍕 EM CONSTRUÇÃO...  🚧
+	🚧  Fast Delivery 🍕 FINISHED  🚧
 </h4>
 <br />
-
+<br />
+<br />
+<br />
 <br />
 
-Feito com ❤️ por Marcus Vinicius 👋🏽 Entre em contato!
+Made with ❤️ by Marcus Vinicius 👋🏽 Get in touch!
+
+//done readme marcus
 
 
 
@@ -120,27 +133,19 @@ Feito com ❤️ por Marcus Vinicius 👋🏽 Entre em contato!
 
 
 
+### 𝐇𝐞𝐥𝐥𝐨 𝐭𝐡𝐞𝐫𝐞, 𝐟𝐞𝐥𝐥𝐨𝐰 <𝚌𝚘𝚍𝚎𝚛𝚜/>! <img width="40" src="https://raw.githubusercontent.com/ABSphreak/ABSphreak/master/gifs/Hi.gif">
 
+I'm a Web Developer, a programmer looking to make <br /> a difference in the digital world. [**Personal Site**](https://marcus-dev.vercel.app/) 🚀
 
+#### My current tools
 
+📲 Front-end Mobile with React Native  
+💻 Front-end Web with Reactjs  
+📡 Back-end with Nodejs  
+🔣 Typescript  
+🧰 And more...
 
-
-//feito readme marcus 
-
-
-### Olá, sou Marcus <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="30" >
-
-Sou Desenvolvedor Web, um programador procurando fazer a diferença no mundo digital. [**Profile Github**](https://github.com/maarcusvinicius). 🚀
-
-#### Minhas ferramentas atuais
-📲 Front-end Mobile com React Native  
-🌎 Front-end Web com Reactjs  
-📡 Back-end com Nodejs  
-🛠️ Typescript  
-🧰 And more...  
-
-
-#### 💬 Encontre-me em outro lugar
+#### 💬 Find me elsewhere
 
 [![Linkedin Badge](https://img.shields.io/badge/-Linkedin-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/marcus-vinicius-507718228/)](https://www.linkedin.com/in/marcus-vinicius-507718228/)
 [![Gmail Badge](https://img.shields.io/badge/-marcus.editor77@gmail.com-c14438?style=flat-square&logo=Gmail&logoColor=white&link=mailto:marcus.editor77@gmail.com)](marcus.editor77@gmail.com)
