@@ -37,13 +37,13 @@ Fast Delivery is a project that simulates an online delivery application for sna
 
 ## 🎡 Functionalities
 
-- Creating orders: Users can create their orders through the web application, selecting the desired items and adding them to the cart.
+- Creating orders: Users can create their orders through the web application, selecting the desired items and adding them to the cart
 
-- Sending orders: Orders created by users are sent to the database using Prisma.
+- Sending orders: Orders created by users are sent to the database using Prisma
 
-- Viewing orders: Orders sent are rendered in the mobile application, allowing the snack bar to view and track orders received.
+- Viewing orders: Orders sent are rendered in the mobile application, allowing the snack bar to view and track orders received
 
-- Order fulfillment: The snack bar can mark orders as fulfilled in the mobile application, indicating that they are in the process of being prepared or have already been delivered.
+- Order fulfillment: The snack bar can mark orders as fulfilled in the mobile application, indicating that they are in the process of being prepared or have already been delivered
 
 <br />
 
@@ -108,6 +108,15 @@ $ npm start
 
 <br />
 
+## License
+
+<p>
+
+This project is licensed under the [MIT License](https://opensource.org/license/mit/). Feel free to use, modify and distribute it as needed.
+
+</p>
+
+<br />
 <br />
 <br />
 <h4 align="center"> 
